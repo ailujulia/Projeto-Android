@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+    :root{  /* variaveis em css*/
+        --cor1: #ebe5c5;
+        --cor2: #83e1ad;
+        --cor3: #3ac277;
+        --cor4: #063d1e;
+        --cor5: #176339;
+        --cor6: #065f2c;
+        --cor7: rgba(42, 241, 182, 0.493);
+    }
+
+    /*      *{  
+                margin: 0%;
+                padding: 0%;
+             }                      
+             
+             configura todos os elementos 
+    */
+
+    @font-face {
+        font-family: android;
+        src: url(pacote-projeto-d010/fontes/idroid.otf);
+    }
+
+    @font-face {
+        font-family: bebas;
+        src: url(pacote-projeto-d010/fontes/Fontfabric-BebasNeue-Regular.ttf);
+    }
+
+    body{
+        margin: 0%;
+        background-color: var(--cor1);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header{
+        color: white;
+        padding: 30px;
+        padding-top: 10px;
+        text-align: center;
+        background-image: linear-gradient(to bottom, #2fa866,#063d1e);
+        min-height: 150px;
+    }
+
+    header > h1{
+        font-size: 3em;
+        text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.267);
+        font-family: bebas;
+        margin-bottom: 20px;
+        font-weight: normal;
+    }
+
+    header > p{
+        padding-bottom: 50px;
+        font-size: 1.2em;
+        text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
+        margin: auto;
+        max-width: 600px;
+    }
+
+    nav{
+        position: absolute;
+        left: 10px;
+    }
+
+    nav > a {
+        color: var(--cor2);
+        padding: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        transition-duration: 0.5s;
+    }
+
+    .a:hover{
+        background-color:var(--cor3) ;
+        color: var(--cor4);
+        border-radius: 5px;
+    }
+
+    main{
+        min-width: 300px;
+        max-width: 1000px;
+        margin: auto;
+        margin-bottom: 30px;
+        padding: 20px;
+        padding-top: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background-color: white;
+    }
+
+    main p{
+        line-height: 30px;
+        text-indent: 20px;
+        text-align: justify;
+        font-size: 1em;
+    }
+
+    main  h1 {
+        font-family: android;
+        color: var(--cor4);
+        font-weight: lighter;
+        text-indent: 0%;
+    }
+
+    main  h2{
+        font-family: android;
+        font-size: 20px;
+        color: var(--cor5);
+        font-weight: lighter;
+        padding-left: 10px;
+        background-image: linear-gradient(to right, rgb(75, 231, 184), rgb(255, 255, 255));
+        text-indent: 0%;
+    }
+
+    main a{
+        color: var(--cor4);
+        background-color: rgb(124, 241, 206);
+        padding: 4px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    main a:hover{
+        text-decoration: underline;
+    }
+
+    a.externo::after{    /* um icone aparecerá depois de cada link com a classe 'externo' */
+       content: '\1F517';
+    }
+
+    main strong{
+        color: var(--cor6);
+    }
+
+    main img{
+        width: 100%;
+    }
+
+    #bugdroid{
+        margin: auto;
+        max-width: 350px;
+    }
+
+    #video{ 
+        position: relative;
+        padding: 20px;
+        background-color: var(--cor4);
+        margin: 0px -20px 40px -20px;
+        padding-bottom: 58%;
+    }
+
+    #video > iframe {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        height: 90%;
+    }
+
+    aside{
+        background-color: var(--cor7);
+        border-radius: 10px;
+        padding: 10px;
+        padding-top: 0px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    }
+
+    aside > h3{
+        background-color:var(--cor4);
+        color: white;
+        padding: 10px;
+        margin: -10px -10px 0px -10px;  /* margem negativa vaza para fora */
+        border-radius: 10px 10px 0px 0px;
+        text-indent: 0%;
+    }
+
+    aside > ul {
+        list-style-type: '\2714\00A0\00A0';  /*  00A0 = &nbsp (espaço sem quebra de linha)  \2714 = codigo do icone  */
+        list-style-position: inside;
+        columns: 2;
+        padding-left: 0%;
+    }
+
+    footer{
+        background-color: var(--cor4);
+        color: white;
+        text-align: center;
+        font-size: smaller;
+        padding: 5px;
+        height: 15px;
+    }
